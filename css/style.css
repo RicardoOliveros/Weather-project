@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+
+
+
+/* Estilos header */
+header {
+    padding: 20px;
+}
+
+.nav-part {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8pc;
+    margin-right: 3pc;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-info-page {
+    display: flex;
+    align-items: center;
+    margin-right: 8pc;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+}
+
+.lista li {
+    font-size: 20px;
+
+}
+
+.lista a {
+    color: black;
+    text-decoration: none;
+    margin-right: 1pc;
+}
+
+.lista a:hover {
+    color: orangered;
+    transition: all ease-in-out 0.2s;
+}
+
+
+.image-header-container {
+    width: 45px;
+    height: 45px;
+    margin-right: 1pc;
+}
+
+.image-header-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fin estilos header */
+
+
+/* Estilos main */
+
+main {
+    width: 100%;
+}
+
+.presentation-webpage {
+    display: flex;
+    width: 100%;
+    margin-top: 2pc;
+    margin-bottom: 7pc;
+}
+
+.card-container {
+    display: flex;
+    width: 85%;
+    margin-left: 6pc;
+    border-radius: 4pc;
+    background: linear-gradient(90deg, #3F75FF 70%, #2196f3);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 5pc;
+}
+
+.image-container-presentation {
+    height: 24pc;
+}
+
+.image-container-presentation img {
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-right: 5pc;
+}
+
+.description {
+    width: 80%;
+}
+
+#principal-title {
+    text-align: center;
+    font-size: 3.6pc;
+    margin-bottom: 2pc;
+}
+
+.description p {
+    font-size: 20px;
+}
+
+.container {
+    margin-left: 4pc;
+}
+
+.form {
+    width: 100%;
+}
+
+#search {
+    font-size: 20px;
+    height: 3pc;
+    width: 53%;
+    margin-left: 16pc;
+    border: none;
+    border-radius: 2pc;
+    padding-left: 2pc;
+    outline: none;
+    background: #dcdcdc;
+}
+
+#btnSearch {
+    cursor: pointer;
+    height: 3pc;
+    width: 10%;
+    top: -2px;
+    position: relative;
+    border: none;
+    border-radius: 2pc;
+    right: 7pc;
+    background-color: #2196f3;
+    color: white;
+}
+
+#btnSearch:hover {
+    background-color: orangered;
+    transition: all ease-in-out 0.5s;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 5pc;
+    margin: 2pc 0 0 20pc;
+
+}
+
+.ciudad {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 9px 16px 9px;
+    height: 18pc;
+    width: 12pc;
+    background-color: beige;
+    border-radius: 20px;
+
+}
+
+.ciudad h1 {
+    font-size: 22px;
+    font-family: 'REM', sans-serif;
+    margin-left: 1pc;
+
+}
+
+.degree {
+    font-family: 'Jost', sans-serif;
+    font-size: 7pc;
+    margin-left: 1pc;
+}
+
+.typeOf {
+    position: relative;
+    bottom: 1pc;
+    left: 3pc;
+}
+
+.charac {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1pc;
+}
+
+.charac p {
+    margin-right: 2pc;
+}
+
+.degreeMain {
+    display: flex;
+    margin-left: 8px;
+}
+
+.imagen-container-weatherMode {
+    position: absolute;
+    top: 49pc;
+    left: 29pc;
+    width: 5pc;
+    height: 5pc;
+}
+
+.imagen-container-weatherMode img {
+    width: 100%;
+    height: 100%;
+}
+
+.humidity {
+    margin-left: 20px;
+}
+
+.charachWeather {
+    display: flex;
+}
+
+.charachWeather span {
+    font-size: 10px;
+    margin-right: 1pc;
+}
+
+
+
+
+/* Fin estilos main  */
+
+
+/* Estilos footer */
+/* Fin estilos footer  */
