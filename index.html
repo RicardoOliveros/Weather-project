@@ -50,6 +50,15 @@
     </header>
 
     <main>
+        <div class="popUp">
+
+            <h2>Opps! This place was already searched.</h2>
+            <div class="imageContainer">
+                <img class="imagePop" src="/img/Weather-amico.svg" alt="">
+            </div>
+            <button id="btnClose">ok</button>
+
+        </div>
         <section class="presentation-webpage">
 
             <div class="left">
@@ -61,11 +70,16 @@
                         thing
                         you need is just type the city you want to know the weather and you will get the result.
                     </p>
+
+                    <div class="container">
+                        <input id="search" type="search" placeholder="Enter a city...">
+                        <a href="#ci"><button id="btnSearch">Search</button></a>
+                    </div>
                 </div>
             </div>
             <div class="right">
-                <div class="image-container-presentation">
-                    <img src="/img/Weather-amico.svg" alt="">
+                <div class="message" id="main">
+
                 </div>
             </div>
 
@@ -73,21 +87,11 @@
         </section>
 
         <section>
-            <div class="container">
 
 
-                <input id="search" type="search" placeholder="Enter a city...">
-                <a href="#cli"><button id="btnSearch">Search</button></a>
-
-            </div>
-            <div class="message" id="main">
-                <!-- <div class="imagen-container-weatherMode">
-                    <img id="imgWeatherMode" src=/img/clouds.png alt="">
-                </div> -->
-            </div>
         </section>
 
-        <section></section>
+
 
 
     </main>

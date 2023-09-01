@@ -90,10 +90,9 @@ main {
 
 .left {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 50%;
-    margin-left: 5pc;
+    width: 62%;
+
 }
 
 .image-container-presentation {
@@ -127,7 +126,8 @@ main {
 }
 
 .container {
-    margin-left: 4pc;
+    margin-top: 2pc;
+    margin-left: -3pc;
 }
 
 .form {
@@ -137,8 +137,8 @@ main {
 #search {
     font-size: 20px;
     height: 3pc;
-    width: 53%;
-    margin-left: 16pc;
+    width: 76%;
+    margin-left: 2pc;
     border: none;
     border-radius: 2pc;
     padding-left: 2pc;
@@ -149,12 +149,12 @@ main {
 #btnSearch {
     cursor: pointer;
     height: 3pc;
-    width: 10%;
+    width: 17%;
     top: -2px;
     position: relative;
     border: none;
     border-radius: 2pc;
-    right: 7pc;
+    right: 5pc;
     background-color: #2196f3;
     color: white;
 }
@@ -166,9 +166,9 @@ main {
 
 #main {
     display: grid;
-    grid-template-columns: repeat(3, 150px);
+    grid-template-columns: repeat(2, 150px);
     gap: 5pc;
-    margin: 2pc 0 0 20pc;
+    margin: 2pc 0 0 0;
 
 }
 
@@ -248,6 +248,45 @@ main {
 
 /* Fin estilos main  */
 
+.popUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(29, 197, 223);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popUpOn {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+
+.imagePop {
+    width: 250px;
+    height: 250px;
+}
+
+#btnClose {
+    cursor: pointer;
+    width: 5pc;
+    height: 2pc;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+#btnClose:hover {
+    background-color: orangered;
+}
 
 /* Estilos footer */
 /* Fin estilos footer  */

@@ -4,7 +4,10 @@ const btnSear = document.getElementById('btnSearch');
 
 const foo = document.getElementById('cli');
 const btnSearch = document.getElementById('btnSearch');
+const weatherI = document.querySelector('.imgWeatherMode');
 
+const buttonClose = document.getElementById('btnClose');
+const box = document.querySelector('.popUp');
 let cities = ['madrid', 'valencia', 'alicante', 'palma de mallorca', 'amsterdam'];
 
 
@@ -22,10 +25,14 @@ const inputCity = () => {
         })
         .then(data => {
 
+
             let numero = (data.main.temp - 273.15);
             console.log(Math.floor(numero));
 
             let precitation = data.rain === undefined ? 0 : data.rain['1h'];
+            if (data.weather[0].main == 'Clouds') {
+
+            }
             main.innerHTML += `
                     <div class="ciudad">
                         <h1><i class='bx bxs-map'></i>${' ' + data.name + ', ' + data.sys.country}</h1>
@@ -40,8 +47,7 @@ const inputCity = () => {
                                 <p>${data.wind.speed}</p>
                                 
                             </div>
-                            
-                        
+
                             <div class="charachWeather">
 
                                 <span>Humidity</span>
@@ -53,9 +59,8 @@ const inputCity = () => {
                     </div>
                     `
 
-
         })
-        .catch((error) => console.log('Error', error));
+        .catch((error) => alert('Error'));
 
 }
 
@@ -72,6 +77,7 @@ cities.forEach(element => {
             let numero = (data.main.temp - 273.15);
             console.log(Math.floor(numero));
             console.log(data.base)
+
 
             let precitation = data.rain === undefined ? 0 : data.rain['1h'];
             let nameCity = ' ' + data.name + ', ' + data.sys.country;
@@ -90,9 +96,7 @@ cities.forEach(element => {
                                 
                             </div>
 
-                            <div class="imagen-container-weatherMode">
-                                <img id="imgWeatherMode" src =/img/clouds.png alt="">
-                            </div>
+                           
                            
                    
                             <div class="charachWeather">
@@ -119,13 +123,25 @@ function addCity(cities, city) {
 }
 
 btnSear.addEventListener('click', (e) => {
-    foo.scrollIntoView({
-        behavior: 'smooth'
-    })
+    let city = inpCity.value
+    console.log(city)
+
+    if (cities.includes(city)) {
+
+        box.classList.toggle('popUpOn')
+    } else {
+        cities.push(city)
+        inputCity()
+    }
+
+
     e.preventDefault()
-    inputCity()
+
 })
 
+buttonClose.addEventListener('click', () => {
+    box.classList.toggle('popUpOn')
+})
 
 
 
